@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+	<title>z-caroutext</title>
+	<link rel="stylesheet" href="css/z-grid.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="sidebar align-center">
+		
+		<h1 class="light">Z-Caroutext</h1>
+		
+		<p>A little VanillaJs plugin to build fake text carousels.</p>
+		
+		<p>
+			<a href="http://github.com/benavern/z-caroutext" class="button">Github</a>
+			<a href="z-caroutext/z-caroutext.js" class="button" download="z-caroutext.js">Download</a>
+		</p>
+		
+		<p>
+			Made with <span class="pink">♥</span> by <br> <a href="http://caradeuc.info">© Benjamin Caradeuc</a>
+		</p>
+		
+	</section>
+	
+	<section class="content">
+		<h1>
+			Z-CAROUTEXT is  
+			<span class="z-caroutext"
+				data-texts='["awesome!", "really good.", "extremly beautiful.", "so badass!"]'
+				data-timing="2000"
+				data-pipe-color="#2a2">
+			</span>
+		</h1>
+	
+		<p>Z-caroutext is a javascript plugin that lets you create a text carousel very easily. </p>
+		
+		<p>
+			It was just an exercise for me to try implementing something complete with <a href="http://vanilla-js.com/">vanillaJs</a> 
+			in object oriented programmation, and decided to share it because it can be interresting for some of you :-).
+		</p>
+		
+		<hr>
+		
+		<h1>How To</h1>
+		
+		<p>This plugin is very simple. You just have to add a span with some parameters. For exemple :</p>
+		
+		<pre>&lt;h1&gt;<br>   Z-CAROUTEXT is <br>   &lt;span class="z-caroutext"<br>      data-texts='["awesome!", "really good.", "extremly beautiful.", "so badass!"]'<br>      data-timing="2000"<br>      data-pipe-color="#2a2"&gt;<br>   &lt;/span&gt;<br>&lt;/h1&gt;</pre>
+		
+		<ul>
+			<li><b>class</b>: this is the classname that is used for each caroutext you want on the web-page. Must be "z-caroutext".</li>
+			<li><b>data-texts</b>: this is the array of texts you want to appear in the loop. It must be a JSON formatted array.</li>
+			<li><b>data-timing</b>: <small>(Optional, Default : 2000)</small> this is the pause duration when the text is fully visible.</li>
+			<li><b>data-pipe-color</b>: <small>(Optional, Default : #000)</small> this is the pipe color.</li>
+		</ul>
+		
+		<hr>
+		
+		<p>Like usual, here is the emmet snippet :</p>
+		<p>
+			<small class="red">
+				*** WARNING: the data-text has to be between single quotes, for example : ' [ "1" , "2" ] ' . <br>
+				Otherwise it won't be valid json array!!!
+			</small>
+		</p>
+		
+		<pre>h1>{SOME TEXT}+span.z-caroutext[data-texts=<span class="red">***</span>][data-timing=2000][data-pipe-color=#000]</pre>
+		
+		<hr>
+		
+		<h1>Examples</h1>
+		
+		<div class="z-grid">
+			<div class="z-2">
+				<div class="z-box">
+					<h2>
+						<span class="z-caroutext" data-texts='["No pipe"]' data-timing="1000" data-pipe-color="transparent"></span>
+					</h2>
+					<pre>&lt;span class="z-caroutext"<br>   data-texts='["No pipe"]'<br>   data-timing="1000"<br>   data-pipe-color="transparent"&gt;<br>&lt;/span&gt;</pre>
+				</div>
+			</div>
+			<div class="z-2">
+				<div class="z-box">
+					<h2>
+						<span class="z-caroutext" data-texts='["Minimal code"]'></span>
+					</h2>
+					<pre>&lt;span class="z-caroutext"<br>   data-texts='["Minimal code"]'&gt;<br>&lt;/span&gt;</pre> <br><br>
+				</div>
+			</div>
+			<div class="z-2">
+				<div class="z-box">
+					<h2>
+						<span class="z-caroutext" data-texts='["Long timing", "named pipe color"]' data-timing="5000" data-pipe-color="lightblue"></span>
+					</h2>
+					<pre>&lt;span class="z-caroutext"<br>   data-texts='["Long timing", "named pipe color"]'<br>   data-timing="5000"<br>   data-pipe-color=lightblue"&gt;<br>&lt;/span&gt;</pre>
+				</div>
+			</div>
+			<div class="z-2">
+				<div class="z-box">
+					<h2>
+						<span class="z-caroutext" data-texts='["Short timing", "rgb pipe color"]' data-timing="10" data-pipe-color="rgb(200,60,60)"></span>
+					</h2>
+					<pre>&lt;span class="z-caroutext"<br>   data-texts='["Short timing", "rgb pipe color"]'<br>   data-timing="10"<br>   data-pipe-color=rgb(200,60,60)"&gt;<br>&lt;/span&gt;</pre>
+				</div>
+			</div>
+		</div>
+		
+		<p>Suggestions, issues, etc... are welcome, on the github issue section.</p>
+		
+		
+	</section>
+	
+	
+	<script src="z-caroutext/z-caroutext.js"></script>
+</body>
+</html>
