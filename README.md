@@ -19,3 +19,7 @@ Everything is explained [HERE](http://labo.caradeuc.info/z-caroutext/)
 ![Screenshot](/screenshot.jpg)
 
 fork, issue, pull requests are welcome :-)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/benavern/z-caroutext/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
